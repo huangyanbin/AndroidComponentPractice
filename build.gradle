@@ -6,17 +6,24 @@ buildscript {
         google()
         jcenter()
         maven {
-            url uri('http://47.93.3.74:9002/repository/maven-releases/')
             credentials {
-                username = 'admin'
-                password = '873825232'
+                username 'OwTUGZ'
+                password 'o58rFbRzop'
             }
+            url 'https://repo.rdc.aliyun.com/repository/128198-release-I4PLvq/'
+        }
+        maven {
+            credentials {
+                username 'OwTUGZ'
+                password 'o58rFbRzop'
+            }
+            url 'https://repo.rdc.aliyun.com/repository/128198-snapshot-0XMFUG/'
         }
         
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.1'
-        classpath 'com.david.app.rsRouter:rs-router-gradle:1.0.0'
+      //  classpath 'com.david.app.rsRouter:rs-router-gradle:1.0.0'
 
     }
 }

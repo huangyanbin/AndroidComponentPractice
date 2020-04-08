@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'maven'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -21,6 +21,23 @@ android {
         }
     }
 
+}
+
+group = 'com.david.app.rsRouter'
+version = '1.0.0'
+
+uploadArchives{
+
+    repositories {
+        mavenDeployer{
+            pom.artifactId = 'moudle1'
+            pom.version = '1.0.0'
+            repository(url: uri('https://repo.rdc.aliyun.com/repository/128198-release-I4PLvq')){
+                authentication(userName: 'OwTUGZ', password: 'o58rFbRzop')
+            }
+
+        }
+    }
 }
 
 dependencies {
