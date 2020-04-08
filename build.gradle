@@ -6,7 +6,11 @@ buildscript {
         google()
         jcenter()
         maven {
-            url uri('D:/repo')
+            url uri('http://47.93.3.74:9002/repository/maven-releases/')
+            credentials {
+                username = 'admin'
+                password = '873825232'
+            }
         }
         
     }

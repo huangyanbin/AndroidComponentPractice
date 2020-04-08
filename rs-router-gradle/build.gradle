@@ -33,7 +33,14 @@ uploadArchives{
 
     repositories {
         mavenDeployer{
-            repository(url: uri('D:/repo'))
+            pom.artifactId = 'rs-router-gradle'
+            pom.version = '1.0.0'
+            repository(url: uri('http://47.93.3.74:9002/repository/maven-releases/')){
+                authentication(userName: 'admin', password: '873825232')
+            }
+            snapshotRepository(url: 'http://47.93.3.74:9002/repository/maven-snapshots/') {
+                authentication(userName: 'admin', password: '873825232')
+            }
         }
     }
 }
