@@ -1,0 +1,5 @@
+rootProject.name='SmartRouter'
+include ':app'
+include ':rs-router-gradle'
+include ':moudle1'
+include ':cc'
