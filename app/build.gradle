@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'smartRouter'
+apply plugin: 'smartRouter'
 
 android {
     compileSdkVersion 29

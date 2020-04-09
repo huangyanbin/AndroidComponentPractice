@@ -23,7 +23,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.1'
-      //  classpath 'com.david.app.rsRouter:rs-router-gradle:1.0.0'
+        classpath 'com.david.app.rsRouter:rs-router-gradle:1.0.0'
 
     }
 }
